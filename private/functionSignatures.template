@@ -1,0 +1,27 @@
+{
+   "_schemaVersion": "1.0.0",
+   "g": {
+      "inputs": [
+         {
+            "name": "tag",
+            "kind": "required",
+            "type": [
+               "char",
+               "choices=TAGS"
+            ]
+         }
+      ]
+   },
+   "d": {
+      "inputs": [
+         {
+            "name": "tag",
+            "kind": "required",
+            "type": [
+               "char",
+               "choices=TAGS"
+            ]
+         }
+      ]
+   }
+}
