@@ -15,6 +15,10 @@ function append_sdirs(tag, folder)
         % and append
         fprintf(fD, '%s "%s"\n', tag, folder);
         fclose(fD);
+
+        % update functionSignates
+        create_functionSignatures();
+
     else
         error('bashmarks:append', 'Did not append cause tag already exists.')
     end
