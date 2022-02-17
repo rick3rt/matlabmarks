@@ -1,5 +1,5 @@
-function [path, n] = get_dir(data, tag)
-    n = find(strcmp(data(:, 1), tag), 1);
+function [path, n] = get_dir(data, bookmark)
+    n = find(strcmp(data(:, 1), bookmark), 1);
     if isempty(n)
         path = [];
     else

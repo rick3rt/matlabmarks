@@ -1,7 +1,7 @@
 function append_sdirs(tag, folder)
     % read sdirs file and output as n-by-2 cell array
     p = fileparts(mfilename('fullpath')); % get dir of bashmarks project
-    f = fullfile(p, '../sdirs');
+    f = fullfile(p, '../bookmarks');
 
     if ~exists_sdirs(tag, folder)
         % read file
