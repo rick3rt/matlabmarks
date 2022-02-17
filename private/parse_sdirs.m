@@ -7,5 +7,5 @@ function data = parse_sdirs()
     data = textscan(fD, '%s %s');
     fclose(fD);
     % repack a bit
-    data = [data{1} data{2}];
+    data = [data{1}, strrep(data{:, 2}, '"', '')];
 end
