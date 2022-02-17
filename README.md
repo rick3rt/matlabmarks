@@ -19,6 +19,9 @@ Available bookmarks:
   project1           -->  C:\projects\project1
 
 >> g mybookmark         % start typing and use tab completion!
+>> disp(pwd)
+C:\some\long\and\hard\to\rememeber\path
+
 ```
 
 ## Matlab Commands
