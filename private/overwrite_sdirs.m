@@ -1,7 +1,7 @@
 function overwrite_sdirs(data)
     % rewrite sdirs file
     p = fileparts(mfilename('fullpath')); % get dir of bashmarks project
-    f = fullfile(p, '../sdirs');
+    f = fullfile(p, '../bookmarks');
 
     % open file, overwrite mode
     fD = fopen(f, 'w');
