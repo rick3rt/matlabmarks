@@ -23,5 +23,17 @@
             ]
          }
       ]
+   },
+   "e": {
+      "inputs": [
+         {
+            "name": "tag",
+            "kind": "required",
+            "type": [
+               "char",
+               "choices=TAGS"
+            ]
+         }
+      ]
    }
 }
