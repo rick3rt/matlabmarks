@@ -1,7 +1,7 @@
 function create_functionSignatures()
 
     % get tags
-    data = parse_sdirs();
+    data = parse_bookmarks();
     tags = data(:, 1);
 
     % get path to functionSignatures.json

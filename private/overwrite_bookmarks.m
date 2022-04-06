@@ -1,5 +1,5 @@
-function overwrite_sdirs(data)
-    % rewrite sdirs file
+function overwrite_bookmarks(data)
+    % rewrite bookmarks file
     p = fileparts(mfilename('fullpath')); % get dir of bashmarks project
     f = fullfile(p, '../bookmarks');
 

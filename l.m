@@ -1,5 +1,5 @@
 function l()
-    data = parse_sdirs();
+    data = parse_bookmarks();
     padl = max(cellfun(@length, data(:, 1)));
     data = sortrows(data);
     fprintf('Available bookmarks:\n');

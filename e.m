@@ -1,5 +1,5 @@
 function e(input)
-    data = parse_sdirs();
+    data = parse_bookmarks();
     folder = get_dir(data, input);
     if isempty(folder)
         error('e:dontknowfolder', 'Dont know that tag, use command `l` to list all folders.')
