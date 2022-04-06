@@ -5,7 +5,7 @@ function data = parse_bookmarks()
     % read file
     fD = fopen(f);
     if fD < 0
-        fD = fopen(fm 'w+');
+        fD = fopen(f, 'w+');
     end
     data = textscan(fD, '%s %s');
     fclose(fD);
