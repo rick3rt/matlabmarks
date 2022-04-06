@@ -4,6 +4,9 @@ function data = parse_bookmarks()
     f = fullfile(p, '../bookmarks');
     % read file
     fD = fopen(f);
+    if fD < 0
+        fD = fopen(f, 'w');
+    end
     data = textscan(fD, '%s %s');
     fclose(fD);
     % repack a bit
