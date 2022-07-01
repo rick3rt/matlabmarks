@@ -1,4 +1,5 @@
 function l()
+    % Lists all available bookmarks
     data = parse_bookmarks();
     padl = max(cellfun(@length, data(:, 1)));
     data = sortrows(data);

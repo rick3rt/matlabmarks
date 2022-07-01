@@ -20,6 +20,6 @@ function append_bookmarks(tag, folder)
         create_functionSignatures();
 
     else
-        error('bashmarks:append', 'Did not append cause tag already exists.')
+        error('matlabmarks:append_bookmarks:append', 'Did not append because bookmark already exists.')
     end
 end

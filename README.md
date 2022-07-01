@@ -26,9 +26,9 @@ C:\some\long\and\hard\to\rememeber\path
 
 ## Matlab Commands
 ```matlab
->> s bookmark_name      % Saves the current directory as "bookmark_name"
->> g bookmark_name      % Goes (cd) to the directory associated with "bookmark_name"
->> e bookmark_name      % Opens the directory associated with "bookmark_name" in the file explorer (Windows only)
->> l                    % Lists all available bookmarks
->> d bookmark_name      % Deletes the bookmark 
+>> s <bookmark>      % Saves the current directory as <bookmark>
+>> g <bookmark>      % Goes (cd) to the directory associated with <bookmark>
+>> e <bookmark>      % Opens the directory associated with <bookmark> in the file explorer (Windows only)
+>> l                 % Lists all available bookmarks
+>> d <bookmark>      % Deletes the bookmark 
 ```
