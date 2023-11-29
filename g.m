@@ -1,5 +1,12 @@
 function g(input)
     % cd to the directory associated with <bookmark>
+    persistent prevDir
+    curDir = cd;
+    if strcmp(input,'-') && ~isempty(prevDir)
+        cd(prevDir)
+        prevDir = curDir;
+        return 
+    end 
     data = parse_bookmarks();
     folder = get_dir(data, input);
     if isempty(folder)
@@ -7,4 +14,5 @@ function g(input)
     else
         cd(folder);
     end
+    prevDir = curDir; 
 end
