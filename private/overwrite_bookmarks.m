@@ -9,7 +9,7 @@ function overwrite_bookmarks(data)
     for r = 1:size(data, 1)
         tag = data{r, 1};
         folder = data{r, 2};
-        fprintf(fD, '%s "%s"\n', tag, folder);
+        fprintf(fD, '%s,%s\n', tag, folder);
     end
 
     fclose(fD);
