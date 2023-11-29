@@ -13,7 +13,7 @@ function append_bookmarks(tag, folder)
             fprintf(fD, '\n');
         end
         % and append
-        fprintf(fD, '%s "%s"\n', tag, folder);
+        fprintf(fD, '%s,%s\n', tag, folder);
         fclose(fD);
 
         % update functionSignates

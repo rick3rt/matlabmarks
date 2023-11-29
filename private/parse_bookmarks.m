@@ -3,12 +3,13 @@ function data = parse_bookmarks()
     p = fileparts(mfilename('fullpath')); % get dir of bashmarks project
     f = fullfile(p, '../bookmarks');
     % read file
-    fD = fopen(f);
-    if fD < 0
-        fD = fopen(f, 'w+');
-    end
-    data = textscan(fD, '%s %s');
-    fclose(fD);
+    %fD = fopen(f);
+    %if fD < 0
+    %    fD = fopen(f, 'w+');
+    %end
+    %data = textscan(fD, '%s %s');
+    data = readmatrix('bookmarks','FileType','text','OutputType','char');
+    %fclose(fD);
     % repack a bit
-    data = [data{1}, strrep(data{:, 2}, '"', '')];
+    % data = [data{1}, strrep(data{:, 2}, '"', '')];
 end
