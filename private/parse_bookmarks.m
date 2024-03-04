@@ -8,8 +8,20 @@ function data = parse_bookmarks()
     %    fD = fopen(f, 'w+');
     %end
     %data = textscan(fD, '%s %s');
-    data = readmatrix('bookmarks','FileType','text','OutputType','char');
+    if ~isfile(f); fid = fopen(f, 'w+'); fclose(fid); end
+    data = read_bookmarks(f);
+    % data = readmatrix(f, 'FileType', 'text', 'OutputType', 'char');
     %fclose(fD);
     % repack a bit
     % data = [data{1}, strrep(data{:, 2}, '"', '')];
+end
+
+
+function data = read_bookmarks(fpath)
+
+    text = fileread(fpath);
+    data = split(text); % split in newlines
+    data(cellfun(@isempty,data)) = []; % remove all empty lines
+    data = split(data, ',');
+
 end
