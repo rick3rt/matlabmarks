@@ -8,4 +8,5 @@ function d(input)
         data(n, :) = [];
         overwrite_bookmarks(data);
     end
+    fprintf('Deleted bookmark: %s --> %s \n', input, folder);
 end
